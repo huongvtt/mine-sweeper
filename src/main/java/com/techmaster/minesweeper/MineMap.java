@@ -39,11 +39,12 @@ public class MineMap {
         Random rand = new Random();
         for (int i=0; i<numMine; i++){
             int myMine = rand.nextInt(tableSize);
-            int c = (myMine % nRow);
-            int r = (myMine / nRow);
+            int c = (myMine % nCol);
+            int r = (myMine / nCol);
 
-            if (cells[r][c] instanceof MineCell) i--;
-            else cells[r][c] = new MineCell();
+            if (!(cells[r][c] instanceof  MineCell))
+                cells[r][c] = new MineCell();
+            else i--;
         }
     }
 
