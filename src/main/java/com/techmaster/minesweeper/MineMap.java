@@ -9,11 +9,8 @@ import java.util.Random;
 
 public class MineMap {
     private Cell[][] cells;
-
     private int nRow;
-
     private int nCol;
-
     private float mineProb;
 
     public MineMap(int nRow, int nCol, float mineProb) {

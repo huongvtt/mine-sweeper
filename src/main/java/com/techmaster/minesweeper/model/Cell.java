@@ -18,6 +18,14 @@ public class Cell {
         return this.discovered;
     }
 
+    public void changeFlagged() {
+        this.flagged = !this.flagged;
+    }
+
+    public void changeDiscovered(){
+        this.discovered = true;
+    }
+
     @Override
     public String toString() {
         return " ";
